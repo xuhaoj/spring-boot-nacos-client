@@ -26,6 +26,8 @@ public class RegisterController {
         instance.setPort(9999);
         instance.setHealthy(false);
         instance.setWeight(2.0);
+        instance.setEnabled(true);
+        instance.setEphemeral(true);//AP(distro)、CP(Raft)
         Map<String, String> instanceMeta = new HashMap<>();
         instanceMeta.put("site", "et2");
         instance.setMetadata(instanceMeta);
